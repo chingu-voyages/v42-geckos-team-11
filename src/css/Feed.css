@@ -8,10 +8,6 @@ img {
   vertical-align: top;
 }
 
-#mainFeed {
-  margin: 100px;
-}
-
 .trending {
   display: flex;
   padding: 20px !important;
@@ -37,22 +33,15 @@ img {
   text-align: left;
 }
 
-@media all and (max-width: 950px) {
-  #mainFeed {
-    margin: 5vw;
-  }
-}
-
 .tempBtn {
   width: 100%;
+  margin-bottom: 50px;
   padding: 10px;
-  background-color: #a4bfd8;
   color: #031f41;
   border: none;
-  margin-bottom: 50px;
+  background-color: #a4bfd8;
 }
-
 .tempBtn:hover {
-  background-color: #031f41;
   color: #a4bfd8;
+  background-color: #031f41;
 }

@@ -44,13 +44,12 @@ function Image(props) {
     const post = {
       cardImg: imageFile,
       contents: contentsRef.current.value,
-      location: "somewhere",
       profileImg: "../images/icons/profile.jpg",
-      userID: "Evelyn Jonas",
+      userID: "Jane Doe",
     };
 
     addPostHandler(post);
-    navigate("/", { replace: true });
+    navigate("/feed", { replace: true });
   }
 
   return (

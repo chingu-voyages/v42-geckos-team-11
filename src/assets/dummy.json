@@ -1,0 +1,22 @@
+{
+  "dummy": [
+    {
+      "cardImg": "../images/post1.jpeg",
+      "contents": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
+      "profileImg": "../images/icons/profile.jpg",
+      "userID": "Jane Doe"
+    },
+    {
+      "cardImg": "../images/post2.jpeg",
+      "contents": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
+      "profileImg": "../images/icons/profile.jpg",
+      "userID": "Jane Doe"
+    },
+    {
+      "cardImg": "../images/post3.jpeg",
+      "contents": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
+      "profileImg": "../images/icons/profile.jpg",
+      "userID": "Jane Doe"
+    }
+  ]
+}

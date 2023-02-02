@@ -15,20 +15,13 @@ const devs = [
   },
   {
     id: 2,
-    name: "Deborah",
-    linkedin: "",
-    twitter: "",
-    github: "",
-  },
-  {
-    id: 3,
     name: "Sadou",
     linkedin: "",
     twitter: "",
     github: "",
   },
   {
-    id: 4,
+    id: 3,
     name: "Kator Agashua",
     linkedin: "",
     twitter: "",

@@ -1,24 +1,9 @@
 import React from "react";
-
 import "./Profile.css";
 
 export default function Profile() {
   return (
     <div className="wrapper">
-      <header>
-        <div className="btn">FEELZ</div>
-        <nav>
-          <a href="#">
-            <img src="/public/images/icons/home.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/public/images/icons/newpost.png" alt="" />
-          </a>
-        </nav>
-        <div className="profile">
-          <img src="/public/images/icons/profile.jpg" alt="" />
-        </div>
-      </header>
       <main>
         <div className="cover">
           <img src="/public/images/icons/profile.jpg" alt="" />
@@ -27,29 +12,29 @@ export default function Profile() {
           <h3>Evelyn Jonas</h3>
           <p className="handle">@Angelevie</p>
           <p className="city">Los Angeles</p>
-          <p className="about">
-            A n artist by day and a content creator by night. I love arts and
-            anything filled with nature
-          </p>
+          <p className="about">A n artist by day and a content creator by night. I love arts and anything filled with nature</p>
           <button>Edit Profile</button>
         </div>
         <div className="detail">
           <div className="profile-summery">
             <div className="icon"></div>
             <div className="summery">
-              <span>2</span><span>Posts</span>
+              <span>2</span>
+              <span>Posts</span>
             </div>
           </div>
           <div className="profile-summery">
             <div className="icon"></div>
             <div className="summery">
-              <span>20</span><span>followers</span>
+              <span>20</span>
+              <span>followers</span>
             </div>
           </div>
           <div className="profile-summery">
             <div className="icon"></div>
             <div className="summery">
-              <span>50</span><span>following</span>
+              <span>50</span>
+              <span>following</span>
             </div>
           </div>
         </div>

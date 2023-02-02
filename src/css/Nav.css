@@ -1,0 +1,13 @@
+.nav-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  padding: 1rem;
+  border-top: 1px solid #031f41;
+  background: #fff;
+}
+.nav-bottom img {
+  width: 50%;
+}

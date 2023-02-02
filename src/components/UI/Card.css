@@ -15,9 +15,6 @@
 .card .cardHeader .profile img {
   width: 50px;
 }
-.card .cardHeader .location {
-  font-size: 12px;
-}
 .card .cardBody {
   display: flex;
   justify-content: center;
@@ -27,10 +24,21 @@
 .card .cardBody .cardImg img {
   width: 65vw;
   object-fit: contain;
-  max-width: 450px;
+  max-width: 600px;
+  max-height: 350px;
 }
 .card .contents {
   padding: 10px;
   border-top: 1px solid #031f41;
   text-align: left;
+}
+.reactions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+}
+.reactions img {
+  width: 50%;
 }

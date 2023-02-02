@@ -1,4 +1,4 @@
-import "./Feed.css";
+import "../css/Feed.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Mousewheel } from "swiper";
@@ -24,7 +24,6 @@ export default function Feed() {
           id: key,
           profileImg: data[key].profileImg,
           userID: data[key].userID,
-          location: data[key].location,
           cardImg: data[key].cardImg,
           contents: data[key].contents,
         });
@@ -40,7 +39,7 @@ export default function Feed() {
   }, [fetchPostData]);
 
   return (
-    <section id="mainFeed">
+    <section id="mainFeed" className="section">
       <Swiper className="trending" modules={[Navigation, Mousewheel]} spaceBetween={20} navigation mousewheel slidesPerView={"auto"}>
         <SwiperSlide className="trendingBox">
           <div className="imgBox">
@@ -75,9 +74,6 @@ export default function Feed() {
       </Swiper>
 
       <div className="container">
-        <Link to="/new">
-          <button className="tempBtn">New Post</button>
-        </Link>
         {feed.map((item, idx) => {
           return <Card data={item} key={item.id} />;
         })}
