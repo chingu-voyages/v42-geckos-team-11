@@ -1,14 +1,33 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Metamorphous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Metamorphous&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  font-family: "Merriweather";
   margin: 0;
   padding: 0;
+  font-family: "Merriweather";
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #031f41;
 }
 
 :root {
-  --blue: #031F41;
-  --lightblue: #A4BFD8;
+  --main-color: #031f41;
+  --light-blue: #a4bfd8;
 }
- */
+.app {
+  position: relative;
+}
+
+.blind {
+  display: none;
+}
+
+.section {
+  margin: 100px;
+}
+
+@media all and (max-width: 950px) {
+  .section {
+    margin: 5vw;
+  }
+}

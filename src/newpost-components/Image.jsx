@@ -44,13 +44,11 @@ function Image(props) {
     const post = {
       cardImg: imageFile,
       contents: contentsRef.current.value,
-      location: "somewhere",
-      profileImg: "../images/icons/profile.jpg",
-      userID: "Evelyn Jonas",
+      userID: "anonymous",
     };
 
     addPostHandler(post);
-    navigate("/", { replace: true });
+    navigate("/feed", { replace: true });
   }
 
   return (
@@ -70,7 +68,7 @@ function Image(props) {
         <p>Accepted files are: png, jpeg, svg</p>
         <textarea name="" placeholder="Description" id="" cols="10" rows="3" ref={contentsRef} />
         <button className="postBtn" onClick={submitHandler}>
-          Create Post
+          Post
         </button>
       </form>
     </div>
