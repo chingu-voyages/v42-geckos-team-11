@@ -6,12 +6,12 @@ export default function Nav() {
     <ul className="nav-items">
       <li className="nav-item">
         <NavLink to="/feed">
-          <img src="/public/images/icons/home.png" alt="" />
+          <img src="/images/icons/home.png" alt="" />
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/new">
-          <img src="/public/images/icons/newpost.png" alt="" />
+          <img src="/images/icons/newpost.png" alt="" />
         </NavLink>
       </li>
     </ul>

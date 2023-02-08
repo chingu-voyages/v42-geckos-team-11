@@ -43,3 +43,24 @@ img {
     background-color: #031f41;
   }
 }
+.noPost {
+  text-align: center;
+  color: #a4bfd8;
+  font-size: 2rem;
+}
+
+@media all and (max-width: 600px) {
+  .trending {
+    .trendingBox {
+      width: 30vw;
+      .imgBox {
+        img {
+          width: 30vw;
+        }
+      }
+    }
+    .tag {
+      margin-top: 20px;
+    }
+  }
+}

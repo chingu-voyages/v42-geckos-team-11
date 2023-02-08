@@ -45,3 +45,21 @@ img {
   color: #a4bfd8;
   background-color: #031f41;
 }
+
+.noPost {
+  text-align: center;
+  color: #a4bfd8;
+  font-size: 2rem;
+}
+
+@media all and (max-width: 600px) {
+  .trending .trendingBox {
+    width: 30vw;
+  }
+  .trending .trendingBox .imgBox img {
+    width: 30vw;
+  }
+  .trending .tag {
+    margin-top: 20px;
+  }
+}

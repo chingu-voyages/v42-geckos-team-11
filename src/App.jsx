@@ -1,7 +1,6 @@
 import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./Styles/newPost.css";
 import Feed from "./components/Feed";
 import NewPost from "./components/NewPost";
 import Header from "./components/Header";

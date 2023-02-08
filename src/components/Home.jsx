@@ -8,7 +8,7 @@ import Card from "./UI/Card";
 const Home = () => {
   const [dummy, setDummy] = useState(data.dummy);
 
-  const { linkedinIcon, twitterIcon, githubIcon } = useIcons();
+  const { linkedinIcon, githubIcon } = useIcons();
 
   const contributors = devs.map((dev) => (
     <div key={dev.id} className="dev">

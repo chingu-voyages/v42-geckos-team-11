@@ -36,6 +36,8 @@ export default function Feed() {
     fetchPostData();
   }, [fetchPostData]);
 
+  const noPost = feed.length;
+
   return (
     <section id="mainFeed" className="section">
       <Swiper className="trending" modules={[Navigation, Mousewheel]} spaceBetween={20} navigation mousewheel slidesPerView={"auto"}>
@@ -72,6 +74,7 @@ export default function Feed() {
       </Swiper>
 
       <div className="container">
+        {!noPost && <div className="noPost">No post</div>}
         {feed.map((item, idx) => {
           return <Card data={item} key={item.id} />;
         })}

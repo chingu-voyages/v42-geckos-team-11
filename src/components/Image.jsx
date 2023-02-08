@@ -1,8 +1,7 @@
 import { useState, useContext, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/upload.svg";
-import { FilterContext } from "../components/NewPost";
-import "../Styles/instagram.css";
+import { FilterContext } from "./NewPost";
 
 function Image(props) {
   const uploadInputRef = useRef(null);

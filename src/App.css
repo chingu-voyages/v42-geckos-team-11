@@ -4,10 +4,10 @@
   margin: 0;
   padding: 0;
   font-family: "Merriweather";
+  color: #031f41;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: #031f41;
 }
 
 :root {
@@ -15,6 +15,7 @@
   --light-blue: #a4bfd8;
 }
 .app {
+  height: 100vh;
   position: relative;
 }
 

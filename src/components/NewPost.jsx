@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../Styles/newPost.css";
-import Image from "../newpost-components/Image";
+import "./NewPost.css";
+import Image from "./Image";
 import { createContext } from "react";
 
 export const FilterContext = createContext();
