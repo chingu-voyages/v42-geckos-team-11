@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../Styles/newPost.css";
 import Image from "../newpost-components/Image";
-import Filter from "../newpost-components/Filter";
 import { createContext } from "react";
 
 export const FilterContext = createContext();
@@ -20,7 +19,6 @@ function NewPost() {
         <h2 className="post-title">Create New Post</h2>
         <div className="postData">
           <Image />
-          <Filter />
         </div>
       </div>
     </FilterContext.Provider>

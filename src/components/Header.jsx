@@ -1,27 +1,8 @@
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import "../css/Header.css";
+import Nav from "./Nav";
 
-const Header = (props) => {
-  const { auth } = props;
-
-  const nav = !auth ? (
-    <ul className="nav-items">
-      <li className="nav-item">
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li className="nav-item login">
-        <NavLink to="/about">Login</NavLink>
-      </li>
-    </ul>
-  ) : (
-    <div className="profile">
-      <Link to="/profile">
-        <img src="../images/icons/profile.jpg" alt="" />
-      </Link>
-    </div>
-  );
-
+const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
@@ -29,8 +10,8 @@ const Header = (props) => {
           <div className="logo">FEELZ</div>
         </Link>
         <nav id="gnb">
-          <h2 class="blind">gnb</h2>
-          {nav}
+          <h2 className="blind">gnb</h2>
+          <Nav />
         </nav>
       </div>
     </header>

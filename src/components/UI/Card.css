@@ -2,6 +2,7 @@
   margin-bottom: 30px;
   border: 1px solid #031f41;
   border-radius: 10px;
+  overflow: hidden;
 }
 .card .cardHeader {
   display: flex;
@@ -10,11 +11,15 @@
   border-bottom: 1px solid #031f41;
 }
 .card .cardHeader .profile {
+  width: 5vw;
+  height: 5vw;
   margin-right: 10px;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: #000;
+  border-radius: 100%;
 }
-.card .cardHeader .profile img {
-  width: 50px;
-}
+
 .card .cardBody {
   display: flex;
   justify-content: center;
@@ -25,20 +30,10 @@
   width: 65vw;
   object-fit: contain;
   max-width: 600px;
-  max-height: 350px;
+  max-height: 400px;
 }
 .card .contents {
   padding: 10px;
   border-top: 1px solid #031f41;
   text-align: left;
-}
-.reactions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 3em;
-}
-.reactions img {
-  width: 50%;
 }

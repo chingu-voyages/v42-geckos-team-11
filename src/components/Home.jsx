@@ -15,7 +15,6 @@ const Home = () => {
       <h5>{dev.name}</h5>
       <div className="icons">
         <a href={dev.linkedin}>{linkedinIcon}</a>
-        <a href={dev.twitter}>{twitterIcon}</a>
         <a href={dev.github}>{githubIcon}</a>
       </div>
     </div>
@@ -46,12 +45,10 @@ const Home = () => {
 
           <div className="feature-text">
             <h2>A unique way to express emotions and connect with others through shared experiences</h2>
-            <p>
-              Whether you're a seasoned photographer or just looking for a fun way to share your memories, FEELZ is the perfect platform for you. So
-              why wait? Start sharing your story with the world today!
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fugiat at cupiditate, explicabo eligendi hic.</p>
           </div>
         </div>
+
         <div className="home-feature">
           <div className="feature-card">{features[2]}</div>
 

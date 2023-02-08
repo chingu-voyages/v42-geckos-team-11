@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Mousewheel } from "swiper";
 import Card from "./UI/Card";
-import { Link } from "react-router-dom";
 import { useState, useCallback, useEffect } from "react";
 
 export default function Feed() {
@@ -22,7 +21,6 @@ export default function Feed() {
       for (const key in data) {
         loadedPost.push({
           id: key,
-          profileImg: data[key].profileImg,
           userID: data[key].userID,
           cardImg: data[key].cardImg,
           contents: data[key].contents,

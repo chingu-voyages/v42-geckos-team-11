@@ -44,8 +44,7 @@ function Image(props) {
     const post = {
       cardImg: imageFile,
       contents: contentsRef.current.value,
-      profileImg: "../images/icons/profile.jpg",
-      userID: "Jane Doe",
+      userID: "anonymous",
     };
 
     addPostHandler(post);
@@ -69,7 +68,7 @@ function Image(props) {
         <p>Accepted files are: png, jpeg, svg</p>
         <textarea name="" placeholder="Description" id="" cols="10" rows="3" ref={contentsRef} />
         <button className="postBtn" onClick={submitHandler}>
-          Create Post
+          Post
         </button>
       </form>
     </div>
