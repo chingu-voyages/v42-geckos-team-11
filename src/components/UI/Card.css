@@ -16,6 +16,8 @@
   margin-right: 10px;
   min-width: 30px;
   min-height: 30px;
+  max-width: 50px;
+  max-height: 50px;
   background-color: #000;
   border-radius: 100%;
 }
