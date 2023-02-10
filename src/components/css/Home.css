@@ -22,6 +22,13 @@
   max-width: 300px;
 }
 
+.feature-text h2 {
+  margin-bottom: 10px;
+}
+
+.devs {
+  margin-top: 10px;
+}
 .dev {
   display: flex;
   align-items: center;

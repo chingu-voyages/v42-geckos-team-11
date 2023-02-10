@@ -1,12 +1,14 @@
-import "../css/Feed.css";
+import "./css/Feed.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Mousewheel } from "swiper";
 import Card from "./UI/Card";
 import { useState, useCallback, useEffect } from "react";
+import data from "../assets/slideDummy.json";
 
 export default function Feed() {
   const [feed, setFeed] = useState([]);
+  const [slide, setSlide] = useState(data.dummy);
 
   const fetchPostData = useCallback(async () => {
     try {
@@ -34,43 +36,24 @@ export default function Feed() {
 
   useEffect(() => {
     fetchPostData();
-  }, [fetchPostData]);
+    setSlide(slide);
+  }, [fetchPostData, slide]);
 
   const noPost = feed.length;
+
+  const slides = slide.map((item) => (
+    <SwiperSlide className="trendingBox">
+      <div className="imgBox">
+        <img src={item.img} alt="" />
+      </div>
+      <p className="tag">{item.tag}</p>
+    </SwiperSlide>
+  ));
 
   return (
     <section id="mainFeed" className="section">
       <Swiper className="trending" modules={[Navigation, Mousewheel]} spaceBetween={20} navigation mousewheel slidesPerView={"auto"}>
-        <SwiperSlide className="trendingBox">
-          <div className="imgBox">
-            <img src="../images/Image-1.png" alt="" />
-          </div>
-          <p className="tag">#Travels</p>
-        </SwiperSlide>
-        <SwiperSlide className="trendingBox">
-          <div className="imgBox">
-            <img src="../images/Image-2.png" alt="" />
-          </div>
-          <p className="tag">#Popular</p>
-        </SwiperSlide>
-        <SwiperSlide className="trendingBox">
-          <div className="imgBox">
-            <img src="../images/Image-3.png" alt="" />
-          </div>
-          <p className="tag">#Goals</p>
-        </SwiperSlide>
-        <SwiperSlide className="trendingBox">
-          <div className="imgBox">
-            <img src="../images/Image-4.png" alt="" />
-          </div>
-          <p className="tag">#Goals</p>
-        </SwiperSlide>
-        <SwiperSlide className="trendingBox">
-          <div className="imgBox">
-            <img src="../images/Image-5.png" alt="" />
-          </div>
-          <p className="tag">#Goals</p>
-        </SwiperSlide>
+        {slides}
       </Swiper>
 
       <div className="container">

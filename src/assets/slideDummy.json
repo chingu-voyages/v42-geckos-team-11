@@ -1,0 +1,24 @@
+{
+  "dummy": [
+    {
+      "img": "../images/Image-1.png",
+      "tag": "#Travels"
+    },
+    {
+      "img": "../images/Image-2.png",
+      "tag": "#Mood"
+    },
+    {
+      "img": "../images/Image-3.png",
+      "tag": "#Yummy"
+    },
+    {
+      "img": "../images/Image-4.png",
+      "tag": "#Films"
+    },
+    {
+      "img": "../images/Image-5.png",
+      "tag": "#Outdoors"
+    }
+  ]
+}

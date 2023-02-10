@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./NewPost.css";
+import "./css/NewPost.css";
 import Image from "./Image";
 import { createContext } from "react";
 

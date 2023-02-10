@@ -1,4 +1,4 @@
-import "../css/Home.css";
+import "./css/Home.css";
 import { useState, useEffect } from "react";
 import useIcons from "../useIcons";
 import devs from "../assets/devData";
@@ -45,7 +45,7 @@ const Home = () => {
 
           <div className="feature-text">
             <h2>A unique way to express emotions and connect with others through shared experiences</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fugiat at cupiditate, explicabo eligendi hic.</p>
+            <p>Let's help you validate your feelings by giving you a platform to express them visually and in words.</p>
           </div>
         </div>
 
@@ -54,7 +54,10 @@ const Home = () => {
 
           <div className="feature-text">
             <h2>Built by</h2>
-            <p>Built by a bunch of enthusiastic frontend developers for the Chingu voyage 42. You can connect and get to know us better</p>
+            <p>
+              Built by a bunch of enthusiastic frontend developers for the Chingu voyage 42. <br />
+              You can connect and get to know us better
+            </p>
             <div className="devs">{contributors}</div>
           </div>
         </div>
