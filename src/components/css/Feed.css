@@ -8,10 +8,6 @@ img {
   vertical-align: top;
 }
 
-#mainFeed {
-  height: 100vh;
-}
-
 .trending {
   display: flex;
   padding: 20px !important;
@@ -30,6 +26,7 @@ img {
   position: relative;
   margin: 50px auto;
   max-width: 600px;
+  padding-bottom: 50px;
 }
 
 .contents {
@@ -52,12 +49,10 @@ img {
 }
 
 .noPost {
-  position: absolute;
-  top: 10vh;
-  left: 50%;
+  height: 50vh;
+  padding-top: 50px;
   font-size: 2rem;
   color: #a4bfd8;
-  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -70,5 +65,8 @@ img {
   }
   .trending .tag {
     margin-top: 20px;
+  }
+  .container {
+    padding-bottom: 0px;
   }
 }

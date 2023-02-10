@@ -41,10 +41,10 @@ export default function Feed() {
 
   const noPost = feed.length;
 
-  const slides = slide.map((item) => (
+  const slides = slide.map((item, idx) => (
     <SwiperSlide className="trendingBox">
       <div className="imgBox">
-        <img src={item.img} alt="" />
+        <img src={item.img} alt="trendingImg" />
       </div>
       <p className="tag">{item.tag}</p>
     </SwiperSlide>
