@@ -44,3 +44,12 @@
   padding: 2em;
   background-color: var(--light-blue);
 }
+
+@media (max-width: 600px) {
+  .home-feature {
+    display: block;
+  }
+  .footer {
+    padding: 1em;
+  }
+}

@@ -7,6 +7,9 @@
 img {
   vertical-align: top;
 }
+#mainFeed {
+  height: 100vh;
+}
 
 .trending {
   display: flex;
@@ -22,6 +25,7 @@ img {
   }
 }
 .container {
+  position: relative;
   margin: 50px auto;
   max-width: 600px;
 }
@@ -44,9 +48,13 @@ img {
   }
 }
 .noPost {
-  text-align: center;
-  color: #a4bfd8;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
   font-size: 2rem;
+  color: #a4bfd8;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 @media all and (max-width: 600px) {
