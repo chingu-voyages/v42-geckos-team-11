@@ -5,6 +5,9 @@
 
 .home-hero-text {
   text-align: center;
+  background-color: #a4bfd884;
+  padding: 30px 0;
+  border-radius: 10px;
 }
 
 .home-feature {

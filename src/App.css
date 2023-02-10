@@ -30,7 +30,7 @@
 }
 
 .section {
-  margin: 100px;
+  margin: 80px 100px;
 }
 
 @media all and (max-width: 950px) {
